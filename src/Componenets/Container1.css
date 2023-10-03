@@ -9,6 +9,7 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-right: 1rem;
+  width: 70%; /* Adjust width for smaller screens */
 }
 
 button {
@@ -34,4 +35,17 @@ li {
 .completed {
   text-decoration: line-through;
   color: #888;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="text"] {
+    width: 50%;
+  }
 }
